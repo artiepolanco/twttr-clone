@@ -1,0 +1,26 @@
+
+<table>
+  <thead>
+    <tr>
+      <th>Pic</th>
+      <th>Name</th>
+      <th>Bio</th>
+      <th>Followers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+
+      <td><%= image_tag user.picture, size: "100x100"  %></td>
+      <td><%= user.name  %></td>
+      <td><%= user.bio  %></td>
+      <td><<%= user.followers.length %></td>
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>
+<div class="user">
+
+</div>
